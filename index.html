@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game with Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="login-container" class="login-container">
+        <h1>Welcome to Snake Game</h1>
+        <div class="login-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+            <label for="age">Age:</label>
+            <input type="number" id="age" placeholder="Enter your age" required>
+            <button id="start-button">Start Game</button>
+        </div>
+    </div>
+
+    <div id="game-container" class="game-container hidden">
+        <div id="user-info" class="user-info">Player: <span id="player-name"></span></div>
+        <div id="game-board" class="game-board"></div>
+        <div class="score-display">
+            <h2>Score: <span id="score">0</span></h2>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
